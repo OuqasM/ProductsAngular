@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "computerrr",
+      "price": 6000,
+      "quantity": "150",
+      "selected": true,
+      "available": false
+    },
+    {
+      "id": 2,
+      "name": "printer",
+      "price": 1090,
+      "quantity": 20,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "smartphone",
+      "price": 499,
+      "quantity": 50,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "watchz",
+      "price": 600,
+      "quantity": 15,
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "watchapple",
+      "price": 6005,
+      "quantity": 15,
+      "selected": true,
+      "available": true,
+      "id": 5
+    },
+    {
+      "name": "mehdi",
+      "price": 0,
+      "quantity": 0,
+      "selected": false,
+      "available": true,
+      "id": 7
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<div class="container">
+    <form [formGroup]="productformgroup" >
+    <div class="form-group">  
+       <label for="name">Name</label>
+       <input type="text" class="form-control" formControlName="name" id="name"
+       [ngClass]="{'is-invalid': submited && productformgroup.controls.name.errors}">
+       <div *ngIf="submited && productformgroup.controls.name.errors" class="invalid-feedback">
+              <div *ngIf="productformgroup.controls.name.errors.required" >Name is required</div>  
+       </div>
+    </div>
+    <div class="form-group">  
+        <label for="price">Price</label>
+        <input type="number" class="form-control" formControlName="price" id="price"
+        [ngClass]="{'is-invalid': submited && productformgroup.controls.price.errors}">
+       <div *ngIf="submited && productformgroup.controls.price.errors" class="invalid-feedback">
+              <div *ngIf="productformgroup.controls.price.errors.required" >Price is required</div>  
+       </div>
+     </div>
+    <div class="form-group">  
+        <label for="quantity">Quntity</label>
+        <input type="text" class="form-control" formControlName="quantity" id="quantity"
+        [ngClass]="{'is-invalid': submited && productformgroup.controls.quantity.errors}">
+       <div *ngIf="submited && productformgroup.controls.quantity.errors" class="invalid-feedback">
+              <div *ngIf="productformgroup.controls.quantity.errors.required" >Quantity is required</div>  
+       </div>
+     </div>
+     <div class="form-group">  
+        <label for="selected">Selected</label>
+        <input type="checkbox"  formControlName="selected" class="form-check" id="selected"
+        [ngClass]="{'is-invalid': submited && productformgroup.controls.selected.errors}">
+       <div *ngIf="submited && productformgroup.controls.selected.errors" class="invalid-feedback">
+              <div *ngIf="productformgroup.controls.selected.errors.required" >Selected is required</div>  
+       </div>
+     </div>
+     <div class="form-group">  
+        <label for="available">Available</label>
+        <input type="checkbox" formControlName="available" class="form-check" id="available"
+        [ngClass]="{'is-invalid': submited && productformgroup.controls.available.errors}">
+       <div *ngIf="submited && productformgroup.controls.available.errors" class="invalid-feedback">
+              <div *ngIf="productformgroup.controls.available.errors.required" >Available is required</div>  
+       </div>
+     </div>
+     <button type="button" class="btn btn-primary" (click)="addproduct()">Add</button>
+    </form>
+</div>
